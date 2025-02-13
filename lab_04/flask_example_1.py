@@ -9,6 +9,7 @@ def hello_world():
 
     return "<p>Hello, World!</p>"
 
+
 @app.route("/sum", methods=["GET"])
 def sum():
     """Return the sum of two numbers."""
