@@ -11,7 +11,7 @@ def hello_world():
 
 
 @app.get("/api/list")
-def list_2():
+def list():
     format = request.args.get('format', 'json')
     filterby = request.args.get('filterby',None)
     filtervalue = request.args.get('filtervalue',None)
