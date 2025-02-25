@@ -9,3 +9,4 @@ Find example [here](lab_02) or open the notebook in Colab pressing  <a target="_
 
 ## Lab 04
 
+Find examples for an api that list popular Youtube videos [here](lab_04). Some example unit tests are also included.
