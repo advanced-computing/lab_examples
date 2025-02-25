@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-import pandas as pd 
 
 app = Flask(__name__)
 
@@ -8,6 +7,7 @@ def hello_world():
     """Return a friendly HTTP greeting."""
 
     return "<p>Hello, World!</p>"
+
 
 @app.route("/sum", methods=["GET"])
 def sum():
