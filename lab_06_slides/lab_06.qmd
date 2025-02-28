@@ -3,7 +3,6 @@ title: "Lab 06"
 subtitle: "Advanced Computing for Policy"
 format: revealjs
 highlight-style: arrow
-self-contained: true
 ---
 
 ```{python}
