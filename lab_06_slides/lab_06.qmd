@@ -29,6 +29,7 @@ Task:
 ::: {style="font-size: 80%"}
 ```{python}
 #| echo: true
+#| eval: false
 data = pd.read_csv('../lab_04/videos_data.csv')
 data['Likes_numeric'] = data['Likes'].str.replace(',', '').astype(int)
 profile = ProfileReport(data, title="Pandas Profiling Report")
