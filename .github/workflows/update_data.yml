@@ -1,4 +1,4 @@
-name: Updata Microsoft Stock Price Data
+name: Update Microsoft Stock Price Data
 
 on:
   schedule:
@@ -18,6 +18,13 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Check directory structure
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Contents of current directory:"
+          ls -la
+          echo "Contents of repository root:"
+          find . -type f -name "*.py" | sort
       - name: Update data
         env: 
           BQ_LAB13: ${{ secrets.BQ_LAB13 }}
