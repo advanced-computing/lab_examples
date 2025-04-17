@@ -9,3 +9,6 @@ matplotlib
 python-dotenv
 pytest
 duckdb
+google-cloud-bigquery
+pandas-gbq
+yfinance
