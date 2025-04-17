@@ -3,6 +3,7 @@ import pandas_gbq
 import pydata_google_auth
 from google.oauth2 import service_account
 import os
+import json
 
 import yfinance as yf # for downloading stock data
 
@@ -20,6 +21,7 @@ def get_bq_credentials():
 
     # getting the credentials from the environment variable
     bq_credentials = os.environ.get('BQ_LAB13')
+    bq_credentials = json.loads(bq_credentials)
     # as json file
     credentials = service_account.Credentials.from_service_account_info(
         bq_credentials,
