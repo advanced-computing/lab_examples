@@ -28,4 +28,4 @@ jobs:
       - name: Update data
         env: 
           BQ_LAB13: ${{ secrets.BQ_LAB13 }}
-        run: python ${{ github.workspace }}/lab_13/update_data.py
+        run: python ${{ github.workspace }}/lab_13/load_data.py
